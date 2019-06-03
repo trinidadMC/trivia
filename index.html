@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!--ESTO ES EL TITULO Y SALE EN LA PESTAÑA-->
+    <title>Super Trivia</title>
+    <!--SE APLICA LA HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="style.css">
+    <!--SE APLICA LA FUENTE-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <!--ESTO PERMITE QUE SE PUEDA LEER Ñ Y TILDES-->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" >
+  </head>		
+   <body>
+
+    <div id="contenedor">
+  		<div id="screen-1" class="screen-1">
+  			<!--EL TITULO DEL JUEGO-->
+   			<h1 class="titulo">¡BIENVENIDO A SUPER TRIVIA!</h1>
+   			<!--PIDE EL NOMBRE PARA INICIAR EL JUEGO-->
+    		<h2 class="subTitulo">Ingresa tu nombre para iniciar el juego</h2>
+    		<!--AQUI SE CREA UN CUADRO DE TEXTO DONDE SE INGRESA EL NOMBRE DEL JUGADOR-->
+  			<input type="text" id="nombre" class="cuadroDeTexto" />
+  			<!--SE AGREGA UN BOTON Y SE APLICA UNA FUNCION AL DAR CLICK-->
+  			<button type="button" class="buttonJugar" onclick="siguiente()" id="empezar">JUGAR</button>
+  		</div>
+		  <div id="screen-2" class="screen-2">
+      	<h1 id="hola-x" class="saludo">!Hola</h1>
+  			<!--PIDE ESCOGER EL TEMA DEL JUEGO-->
+ 			  <h1 class="subTitulo2">ESCOGE UN TEMA</h1>
+ 			  <!--BOTON DEL PRIMER TEMA-->
+   			<button type="button" class="buttonTema1" id="" onclick="tema1()">GEOGRAFIA</button>
+   			<!--BOTON DEL SEGUNDO TEMA-->
+   			<button type="button" class="buttonTema2"  id="" onclick="tema2()">BIOLOGIA</button>
+  		</div>
+		  <div  id="screen-3" class="screen-3">
+      	<form action="/submit" method="post"> 
+          <!--PREGUNTA-->
+          <p class="tituloEnPregunta">PREGUNTA 1/3</p>
+        	<p class="pregunta">¿Cuál es el idioma más hablado en Suiza?</p>
+			    <p ><input type="radio" name="pregunta1" id="p111" onclick="next1T1()" class="botonrespuesta">A. Ingles</p>
+			    <p ><input type="radio" name="pregunta1" id="p121" onclick="next1T1()" class="botonrespuesta">B. Croata</p>
+			    <p ><input type="radio" name="pregunta1" id="p131" onclick="next1T1()" class="botonrespuesta">C. Aleman</p>
+      	</form>
+  		</div>
+	    <div id="screen-4" class="screen-4">
+        <form action="/submit" method="post"> 
+        <!--PREGUNTA-->
+      	  <p class="tituloEnPregunta">PREGUNTA 2/3</p>
+      	  <p class="pregunta" >Cuál es la capital de Indonesia?</p>
+		      <p><input type="radio" name="pregunta2" id="p211" onclick="next2T1()" class="botonrespuesta"> A. Andorra</p>
+		      <p><input type="radio" name="pregunta2" id="p221" onclick="next2T1()" class="botonrespuesta"> B. Jakarta</p>
+		      <p><input type="radio" name="pregunta2" id="p231" onclick="next2T1()" class="botonrespuesta"> C. Luanda </p>
+        </form>
+ 	    </div>
+	    <div id="screen-5" class="screen-5">
+        <form action="/submit" method="post"> 
+          <!--PREGUNTA-->
+          <p class="tituloEnPregunta">PREGUNTA 3/3</p>
+          <p class="pregunta" >¿En qué hemisferio se encuentra Jamaica?</p>
+		      <p><input type="radio" name="pregunta3" id="p311" onclick="next3T1()" class="botonrespuesta"> A. Norte</p>
+		      <p><input type="radio" name="pregunta3" id="p321" onclick="next3T1()" class="botonrespuesta"> B. Oeste</p>
+		      <p><input type="radio" name="pregunta3" id="p331" onclick="next3T1()" class="botonrespuesta"> C. Este </p>
+        </form>
+      </div>
+	    <div id="screen-6" class="screen-6">
+        <form action="/submit" method="post"> 
+          <!--PREGUNTA-->
+          <p class="tituloEnPregunta">PREGUNTA 1/3</p>
+          <p class="pregunta">¿Cómo se llaman las células nerviosas?</p>
+          <p><input type="radio" name="pregunta1" id="p112" onclick="next1T2()" class="botonrespuesta">A. Neuronas</p>
+          <p><input type="radio" name="pregunta1" id="p122" onclick="next1T2()" class="botonrespuesta">B. Epitelial</p>
+          <p><input type="radio" name="pregunta1" id="p132" onclick="next1T2()" class="botonrespuesta">C. Astrocito</p>
+        </form>
+ 	    </div>
+	    <div  id="screen-7" class="screen-7">
+        <form action="/submit" method="post"> 
+          <!--PREGUNTA-->
+          <p class="tituloEnPregunta">PREGUNTA 2/3</p>
+          <p class="pregunta">¿Cómo se llama la ciencia que estudia la sangre?</p>
+          <p><input type="radio" name="pregunta2" id="p212" onclick="next2T2()" class="botonrespuesta">A. Hepatología</p>
+          <p><input type="radio" name="pregunta2" id="p222" onclick="next2T2()" class="botonrespuesta">B. Herpetología</p>
+          <p><input type="radio" name="pregunta2" id="p232" onclick="next2T2()" class="botonrespuesta">C. Hematología</p>
+        </form>
+      </div>
+	    <div  id="screen-8" class="screen-8">
+        <form action="/submit" method="post"> 
+          <!--PREGUNTA-->
+         <p class="tituloEnPregunta">PREGUNTA 3/3</p>
+         <p class="pregunta">¿Cuál es el dedo más sensible de la mano?</p>
+         <p><input type="radio" name="pregunta3" id="p312" onclick="next3T2()" class="botonrespuesta">A. Indice</p>
+         <p><input type="radio" name="pregunta3" id="p322" onclick="next3T2()" class="botonrespuesta">B. Meñique</p>
+         <p><input type="radio" name="pregunta3" id="p332" onclick="next3T2()" class="botonrespuesta">C. Corazón</p>
+        </form>
+  	  </div>
+  	  <div id="screen-9" class="screen-9">
+      	 <p><input type="button"class="resultado" value="Click Aquí para ver tu RESULTADO"  onclick="resultadoTema1()" /></p>
+      	 <button type="button" class="buttonVolverAJugar" id="" onclick="volverJugar1()" >Volver a JUGAR</button>
+  	  </div>
+  	  <div id="screen-10" class="screen-10">
+      	 <p><input type="button" class="resultado" value="Click Aquí para ver tu RESULTADO"  onclick="resultadoTema2()" /></p>
+      	 <button type="button" class="buttonVolverAJugar" id="" onclick="volverJugar2()" >Volver a JUGAR</button>
+  	  </div>
+      </div>
+    	<!--ESTE ES EL JAVASCRIPT-->
+   		<script type="text/javascript" src="app.js"> </script>
+  </body>
+</html>

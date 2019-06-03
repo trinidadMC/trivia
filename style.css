@@ -1,0 +1,227 @@
+/*Aplica a todo el documento*/
+*{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+/*Estilo del titulo*/
+.titulo{
+	color:#4abdac;
+	font-size:60px;
+	font-weight: 900;
+	margin:50px 0 30px 0;
+}
+/*Estilo de subtitulo*/
+.subTitulo{
+	margin:50px 0 10px 0;
+	display:block;
+	color:grey;
+	font-weight: 700;
+}
+.subTitulo2{
+	color:#ffce00;
+	font-size:50px;
+	font-weight:700;
+	margin:70px 0 10px 0;
+}
+.saludo{
+	margin-top:30px;
+	margin-bottom:10px;
+	display:block;
+	color:grey;
+	font-size:60px;
+	font-weight:900;
+	font-style: italic;
+}
+/*Se aplica al cuadro DE TEXTO*/
+.cuadroDeTexto{
+	width:300px;
+	height:20px;
+	border:none;
+	outline: none;
+	margin-top:5px;
+	background-color:#ffce00;
+	color: #ffffff;
+	font-size:30px;
+	font-weight: 900;
+	text-align:center; 
+	padding:20px;
+	border-radius: 35px 0px 35px 0px;  
+}
+/*Aplicado al boton JUGAR*/
+.buttonJugar{
+	height:50px;
+	width:120px;
+	border:none;
+	background-color:#fc4a12;
+	border-radius:35px;
+	outline: none;
+	display: block;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size:30px;
+	font-weight:400;
+	color: #ffffff;
+}
+/*Cambia de estado al poner el cursor encima*/
+.buttonJugar:hover {
+	background-color:#4abdac;
+ }
+/*Aplicado al boton del primer tema*/
+.buttonTema1{
+border-radius:25px;
+height:80px;
+width:200px;
+border: none;
+background-color:#fc4a12;
+outline: none;
+color:white;
+margin:10px 40px 30px 40px;
+font-size:30px;
+}
+/*Se aplica al poner el cursor encima*/
+.buttonTema1:hover{
+background-color:#ffce00; 
+}
+
+/* Estilo para los screens*/
+.screen-1{
+   height: 100vh;
+    background-image: url(bienvenida.png);
+    background-size:contain;
+
+}
+
+.screen-2{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-3{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-4{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-5{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-6{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-7{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-8{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-9{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+.screen-10{
+    height: 100vh;
+    display: none;
+    background-color:#ffffff;
+}
+/*Aplicado al boton del segundo tema*/
+.buttonTema2{
+border-radius:25px;
+height:80px;
+width:200px;
+border:none;
+background-color:#4abdac;
+color: white;
+outline: none;
+margin:10px 40px 30px 40px;
+font-size:30px;
+text-align: justify-all;
+}
+/*Cambia al poner el cursor encima*/
+.buttonTema2:hover{
+background-color:#ffce00;
+}
+
+.tituloEnPregunta{
+	color:#424242;
+	font-size:35px;
+	margin-top: 30px;
+	margin-bottom:60px;
+	text-decoration-line:underline;
+	text-decoration-color:#ffce00;
+}
+/*Estilo de las preguntas*/
+.pregunta{
+	margin-top: 50px;
+	margin-bottom:5px;
+	display:block;
+	color:#6d6d6d;
+	font-size:35px;
+}
+.botonrespuesta{
+	width:30px;
+	height: 30px;
+}
+/*Boton volver a jugar*/
+.buttonVolverAJugar{
+	height:80px;
+	width:150px;
+	border: none;
+	background-color:#ffce00;
+	border-radius:35px;
+	outline: none;
+	display: inline;
+	margin:70px;
+	font-size:30px;
+	color: #ffffff;
+}
+.buttonVolverAJugar:hover{
+	height:85px;
+	width:155px;
+	color: #fc4a12;
+}
+.botonrespuesta{
+	width: 15px;
+	height: 15px;
+	display: list-item;
+	margin-left:auto;
+	margin-right:auto;
+}
+.resultado{
+	height:50px;
+	width:750px;
+	border:none;
+	background-color:#4abdac;
+	border-radius:25px;
+	outline: none;
+	display: block;
+	margin-top:70px;
+	margin-right: auto;
+	margin-left: auto;
+	color:#ffffff; 
+	font-size:40px;
+	font-weight:700;
+}
+.resultado:hover{
+	height:55px;
+	width:755px;
+	background-color:#fc4a12;
+	outline: none;
+	display: block;
+	color: white; 
+	font-size:40px;
+	font-weight: 900;
+}
